@@ -1,0 +1,16 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <br><br>
+        <h3 class=" text-center " style="background-color: #4287b8;color: #fff;">Salut Mr/Mrs {{ name }}</h3>
+        <h4 class="text-muted">Merci de nous faire confiance Mr/Mrs {{ name }}. Nous avons recu votre commande vous seriez livrez dans un delai de 24h.<a href="https://wa.me/+237681252415">Contactez - nous</a></h4>
+    </div>
+        <div style="margin-left:490px;position: relative;top: 50px;" >
+            <br><img src= "{% static 'images\logoecom.jpg' %}" alt=" Busn'king" height="290" width="290" > <h5 > <em>Busn'King Vous Remercie..</em></h5>
+        </div>
+        
+</div>
+
+{% endblock %}

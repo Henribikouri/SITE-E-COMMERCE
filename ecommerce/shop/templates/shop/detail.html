@@ -1,0 +1,36 @@
+{% extends 'shop/base.html' %}
+{% load static %}
+{% block content %} 
+
+<div class="row">
+    <div class="col-md-6">
+        <div style="margin-left:490px;position: relative;top: 50px;" id="imd">
+            <img src="{{ Produit.image }}" alt="" height="550" width="550">
+        </div>
+        
+    </div>
+    <div class="col-md-6" style="position: relative;top: 60px;margin-left:-450px;">
+        <div class="text-warning display-3">
+           <h2 style="color:rgb(67, 110, 180);">{{ Produit.titre}}</h2> 
+        </div>
+        <div class="text"style="color:rgb(93, 93, 174);">
+            Prix Actuel: {{ Produit.prix}} FCFA 
+         </div>
+         <div class="text-danger">
+            Prix reccent: <s> {{ Produit.prixavant}} FCFA </s>
+         </div>
+         <div >
+        <br><h5 style="color:rgb(67, 110, 180);">description du produit: <h5>{{ Produit.description}} 
+         </div>
+         <a href="#"><button class="btn btn-sucess">Acheter</button></a>
+         <div>
+            <br><img src= "{% static 'images\logoecom.jpg' %}" alt=" Busn'king" height="270" width="270" >
+         </div>
+
+    </div>
+    
+</div>
+
+
+
+{% endblock %}
